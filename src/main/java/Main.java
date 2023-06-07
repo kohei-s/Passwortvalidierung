@@ -64,7 +64,7 @@ public class Main {
         String[] invalidPass = {"123456", "passwort"};
 
         for (String pass : invalidPass) {
-            if (passwort == pass) {
+            if (passwort.equals(pass)) {
                 System.out.println("Das Passwort ist schlecht");
                 count++;
             }
