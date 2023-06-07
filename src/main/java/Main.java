@@ -21,7 +21,7 @@ public class Main {
         int passLength = passwort.length();
         System.out.println("Die Länge deines Passworts ist: " + passLength);
         boolean result = (passLength >= 8) && (passLength <= 20);
-        System.out.println("Die Länge ist gültig: " + result);
+        System.out.println("Die Länge des Passworts ist gültig: " + result);
         return result;
    }
    public static boolean isNumberInPass(String passwort){
