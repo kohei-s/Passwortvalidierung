@@ -62,12 +62,14 @@ public class Main {
     public static boolean isValidPass(String passwort) {
         int count = 0;
         String[] invalidPass = {"123456", "passwort"};
+
         for (String pass : invalidPass) {
             if (passwort == pass) {
                 System.out.println("Das Passwort ist schlecht");
                 count++;
             }
         }
+
         boolean result = count > 0;
         System.out.println("Das Passwort ist " + ((result)? "schlecht":"gut"));
         return result;
